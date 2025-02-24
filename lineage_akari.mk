@@ -10,6 +10,10 @@ $(call inherit-product, device/sony/akari/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_DISABLE_EPPE := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_NAME := lineage_akari
 PRODUCT_DEVICE := akari
 PRODUCT_MANUFACTURER := Sony
