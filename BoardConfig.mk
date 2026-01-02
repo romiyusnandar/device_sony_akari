@@ -13,6 +13,7 @@ DEVICE_PATH := device/sony/akari
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
+TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_CONFIG := vendor/sdm845-perf_defconfig
 TARGET_KERNEL_CONFIG += vendor/sony/akari.config
 
