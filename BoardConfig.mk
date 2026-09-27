@@ -12,8 +12,9 @@ DEVICE_PATH := device/sony/akari
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
-TARGET_KERNEL_CONFIG := tama_akari_kddi_defconfig
+# Kernel (4.19 - Tama-4-19 tree)
+TARGET_KERNEL_VERSION := 4.19
+TARGET_KERNEL_CONFIG := vendor/sdm845-perf_defconfig vendor/sony/akari.config
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
