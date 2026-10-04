@@ -12,8 +12,12 @@ DEVICE_PATH := device/sony/akari
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
+# Kernel (Sony SDM845 Linux 5.4 prebuilt, 4.9 source used for UAPI headers)
+TARGET_KERNEL_SOURCE := kernel/sony/sdm845
 TARGET_KERNEL_CONFIG := tama_akari_kddi_defconfig
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel-dtb
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo-akari.img
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
