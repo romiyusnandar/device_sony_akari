@@ -12,9 +12,9 @@ DEVICE_PATH := device/sony/akari
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel (Sony SDM845 Linux 5.4)
-TARGET_KERNEL_SOURCE := kernel/sony/msm-5.4/kernel
-TARGET_KERNEL_CONFIG := aosp_tama_defconfig
+# Kernel (Sony SDM845 Linux 5.4, 4.9 source for Lineage BSP headers)
+TARGET_KERNEL_SOURCE := kernel/sony/sdm845
+TARGET_KERNEL_CONFIG := tama_akari_kddi_defconfig
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel-dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo-akari.img
