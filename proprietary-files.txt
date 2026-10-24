@@ -378,11 +378,6 @@ vendor/lib/liblocationservice.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/libslimclient.so
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 
 # Secd
 vendor/bin/hw/vendor.semc.hardware.secd@1.0-service

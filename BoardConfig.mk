@@ -15,9 +15,6 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_CONFIG := aosp_tama_akari_defconfig
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Partitions
 # Reserve space for data encryption (44712771584-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 44712755200
